@@ -26,9 +26,6 @@ Matt Nicholas: fostermatt82@gmail.com
 ## Technologies Used
   This site was designed using HTML, Bootstrap, javascript, jquery, bower and gulp. View the source code at https://github.com/Matt-Nicholas/github-seach-js-w1-solo.git
 
-## Visit the site at
-  Matt-Nicholas.github.io/github-search-js-w1-solo
-
 
 ### License
 *This site is Licensed under the MIT licensing*
