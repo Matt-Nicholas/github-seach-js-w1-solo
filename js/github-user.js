@@ -25,3 +25,7 @@ exports.getRepos = function(username){
     console.log(error.responseJSON.message);
   });
 };
+
+exports.getRandom = function(min, max) {
+  return Math.round(Math.random() * (max - min) + min);
+}
