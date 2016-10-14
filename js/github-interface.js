@@ -1,8 +1,13 @@
 var getRepos = require('./../js/github-user.js').getRepos;
 
-var userName = 'Matt-Nicholas';
 
 
 $(document).ready(function(){
-  getRepos(userName);
+  $('#user-form').submit(function(event){
+    event.preventDefault();
+
+    var username = $('#username').val();
+    getRepos(username);
+
+  })
 });
