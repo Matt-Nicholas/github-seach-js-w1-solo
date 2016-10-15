@@ -6,8 +6,18 @@
 A site for users to search github users by username and see user and repository info
 
 ## Setup/Installation Requirements
-* Install gulp, install bower and required dependencies listed in .json files.
-## Run gulp serve from the top level directory to execute the program
+* From the terminal enter the following commands:
+    -$ npm install
+    -$ bower install
+    -$ touch .env
+
+  * Create a new file to
+  * Obtain a github API token
+  * Save your api token in the .env
+  * Export the api key
+  * exports.apiKey = 'YOUR-API_KEY';
+
+* Run gulp serve from the top level directory to execute the program
 $ gulp serve
 
 
