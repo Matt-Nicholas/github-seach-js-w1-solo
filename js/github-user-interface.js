@@ -1,13 +1,12 @@
 var getRepos = require('./../js/github-user.js').getRepos;
-var getRandom = require('./../js/github-user.js').getRandom;
-
+var setOctocat = require('./../js/github-user.js').setOctocat;
 $(document).ready(function(){
-  var imageId = getRandom(0, 1);
-  if(imageId === 0){
 
-  }
+var imageSource = setOctocat(0,6);
 
-  console.log(rand);
+  console.log("****" + imageSource);
+  document.getElementById("octocat-background-img").src=imageSource;
+
   $('#user-form').submit(function(event){
     event.preventDefault();
     $('#display-results').empty();

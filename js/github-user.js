@@ -5,7 +5,7 @@ exports.getRepos = function(username){
   $.get('https://api.github.com/users/' + username + '?access_token=' + apiKey).then(function(response){
     console.log(response);
 
-    $('#display-results').prepend('<div id="profile"><h2 id="display-username"><img id="octocat-image" src="./../img/Octocat/Octocat.png">' + response.name + '<img id="octocat-image" src="./../img/Octocat/Octocat.png"></h2><h5>' + response.email + '</h5><img id="avatar" src="' + response.avatar_url + '"></div>');
+    $('#display-results').prepend('<div id="profile"><h2 id="display-username"><img id="octocat-image" src="./../img/Octocat0.png">' + response.name + '<img id="octocat-image" src="./../img/Octocat0.png"></h2><h5>' + response.email + '</h5><img id="avatar" src="' + response.avatar_url + '"></div>');
   }).fail(function(error){
     //Displays an error message if no repo is found
     $('#display-results').append('<h4>No account found for <strong>\"' + username + '\"</strong></h4><h4>Please check the username and try again</h4>');
@@ -26,6 +26,10 @@ exports.getRepos = function(username){
   });
 };
 
-exports.getRandom = function(min, max) {
+getRandom = function(min, max) {
   return Math.round(Math.random() * (max - min) + min);
 };
+
+exports.setOctocat = function(min, max){
+  return  "img/Octocat" + Math.round(Math.random() * (max - min) + min) + ".png";
+}
