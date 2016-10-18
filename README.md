@@ -14,14 +14,14 @@ A site for users to search github users by username and see user and repository 
     * -$ bower install
     * -$ touch .env
 
-  ### Create a new file to
-  ### Obtain a github API token
-  ### Save your api token in the .env
-  ### Export the api key
-  ### exports.apiKey = 'YOUR-API_KEY';
+   * Create a new file to
+   * Obtain a github API token
+   * Save your api token in the .env
+   * Export the api key
+  * exports.apiKey = 'YOUR-API_KEY';
 
 ### Run gulp serve from the top level directory to execute the program
-$ gulp serve
+* $ gulp serve
 
 ### BDD
 | Behavior:                                          | Input Example:                             | Output Example:                            |
