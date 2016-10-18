@@ -6,21 +6,22 @@
 A site for users to search github users by username and see user and repository info
 
 ## Setup/Installation Requirements
-* From the terminal enter the following commands:
-    -$ npm install
-    -$ bower install
-    -$ touch .env
 
-  * Create a new file to
-  * Obtain a github API token
-  * Save your api token in the .env
-  * Export the api key
-  * exports.apiKey = 'YOUR-API_KEY';
+* Clone repo from GitHub https://github.com/Matt-Nicholas/github-seach-js-w1-solo
 
-* Run gulp serve from the top level directory to execute the program
+### From the terminal enter the following commands from the top level directory:
+    * -$ npm install
+    * -$ bower install
+    * -$ touch .env
+
+  ### Create a new file to
+  ### Obtain a github API token
+  ### Save your api token in the .env
+  ### Export the api key
+  ### exports.apiKey = 'YOUR-API_KEY';
+
+### Run gulp serve from the top level directory to execute the program
 $ gulp serve
-
-
 
 ### BDD
 | Behavior:                                          | Input Example:                             | Output Example:                            |
